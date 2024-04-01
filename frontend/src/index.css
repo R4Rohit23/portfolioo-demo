@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Poppins, sans-serif;
+}
+
+.gradient-button {
+  @apply bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg;
+}
+
+.center-horizontal {
+  @apply flex justify-center items-center;
+}
+
+.center-vertical {
+  @apply h-screen flex items-center;
+}
+
+.heading1 {
+  @apply text-3xl font-semibold;
+}
+
+/* loader css */
+
+.custom-loader {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  border: 8px solid #0000;
+  border-radius: 50%;
+  border-color: #f8ab41 #0000;
+  animation: s6 1s infinite linear;
+}
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 4px;
+  border: inherit;
+  border-radius: 50%;
+}
+.custom-loader::before {
+  border-color: #f7c50f #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+.custom-loader::after {
+  margin: 16px;
+}
+
+@keyframes s6 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.stats-1 {
+  background: linear-gradient(90.12deg, #896DD5 0.13%, #B4A0E6 100.14%);
+}
+
+.stats-2 {
+  background: linear-gradient(90.12deg, #3C58AA 0.13%, #3E94FE 100.14%);
+}
+
+.stats-3 {
+  background: linear-gradient(90.12deg, #ED605F 0.13%, #F98585 100.14%);
+}
+
+.stats-4 {
+  background: linear-gradient(90.12deg, #F38241 0.13%, #FFA95E 100.14%);
+}

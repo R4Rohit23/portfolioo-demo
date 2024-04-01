@@ -1,0 +1,25 @@
+{
+  "OTP_MAX_ATTEMPTS": 0,
+  "OTP_EXPIRATION_TIMEOUT_IN_SECS": 300,
+  "OTP_LENGTH": 4,
+  "JWT_SECRET": "efr3ogn0rg3",
+  "JWT_ACCESS_TOKEN_EXPIRY": "43243424h",
+  "ADMIN_JWT_SECRET": "efr3ogn0rg3",
+  "ADMIN_JWT_ACCESS_TOKEN_EXPIRY": "43243424h",
+  "CONSTANTS": {
+    "client": "Client",
+    "artist": "Artist",
+    "admin": "Admin",
+    "DB_COLLECTIONS": {
+      "USERS": "User",
+      "OTPS": "Otp",
+      "ADMIN": "Admin",
+      "ARTIST": "Artist",
+      "CLIENT": "Client",
+      "GIGS": "Gig",
+      "MESSAGE" : "Message",
+      "PAYMENT": "Payment"
+    }
+  },
+  "OTP_TYPES": ["forgot-password", "user-verification"]
+}
