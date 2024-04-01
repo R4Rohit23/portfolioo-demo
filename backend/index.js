@@ -48,9 +48,6 @@ app.use("/api/admin", adminRouter);
 app.use("/api/dashBoard", dashBoardRouter);
 app.use("/api/payment", paymentRouter);
 
-const buildPath = path.join(__dirname, "../frontend/dist");
-app.use(express.static(buildPath));
-
 // to run and test locally
 if (process.env.DEVELOPMENT) {
   const port = process.env.PORT || 4000;
